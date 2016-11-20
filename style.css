@@ -1,0 +1,136 @@
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline;
+
+  padding-left: 3rem;
+}
+
+nav ul li a {
+  color: #333333;
+}
+
+#currentPage {
+  color: #b74949;
+}
+
+body {
+	font-family: "Helvetica", "Arial", sans-serif;
+	font-size:1.1rem;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	max-width: 55rem;
+	margin: 0 auto;
+	padding: 4rem 3rem;
+}
+
+a {
+	color: #b74949;
+}
+
+h1, h2, h3, strong {
+	color: #333;
+}
+
+h1, h2, h3 {
+	line-height: normal;
+}
+
+h1 .subhead {
+	font-size:0.7rem;
+}
+
+p, ul, ol {
+	margin-bottom:1rem;
+}
+
+li {
+	margin-bottom: 0.5rem;
+}
+
+section {
+	margin-bottom: 3rem;
+	padding-bottom: 2rem;
+	border-bottom: 1px solid #ddd;
+}
+
+header {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+	font-size:3rem;
+	margin-bottom: 0;
+	text-align:center;
+}
+
+.tagline {
+	font-size:1.3rem;
+	max-width: 80%;
+	margin: 1rem auto 2rem auto;
+	font-style: italic;
+	text-align: center;
+	color: #b74949;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h3 {
+	font-size:1.4rem;
+}
+
+#leadership {
+}
+
+.leader {
+  display: inline-block;
+  background: #fcfcfc;
+  border-style: outset;
+  padding: 0.5rem;
+}
+
+.leader img {
+  display: block;
+  max-width: 15rem;
+  max-height: 15rem;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.leader p {
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.leader p.name {
+	color: #b74949;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.leader p.role {
+  font-style: italic;
+}
+
+#mission p {
+  font-style: italic;
+  font-size: 2rem;
+}
