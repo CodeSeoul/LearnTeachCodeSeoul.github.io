@@ -1,0 +1,18 @@
+body { padding-top: 70px; }
+
+h2, .h2 {
+	font-size: 28px;
+}
+
+h3, .h3 {
+	font-size: 22px;
+}
+
+.page-header {
+	border-bottom: 1px solid #eee;	
+}
+
+.media {
+	border: 1px solid #eee;
+	margin-bottom: 5px
+}
