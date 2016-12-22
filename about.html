@@ -1,74 +1,177 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <title>Learn to Code Seoul - About</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Learn To Code Seoul</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-+ENW/yibaokMnme+vBLnHMphUYxHs34h9lpdbSLuAwGkOKFRl4C34WkjazBtb7eT" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header>
-    <h1><a href="index.html">Learn To Code Seoul</a></h1>
-		<p class="tagline">A community in Seoul for anyone who wants to learn about computer science or programming</p>
-    <nav>
-      <ul>
-        <li><a id="currentPage" href="about.html">About</a></li>
-        <li><a href="tutorials.html">Tutorials</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><i class="fa fa-laptop" aria-hidden="true"></i> Learn To Code Seoul</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        </li>
+        <li class="active">
+          <a href="about.html"><i class="fa fa-users" aria-hidden="true"></i> About</span></a>
+        </li>
+        <li>
+          <a href="tutorials.html"><i class="fa fa-book" aria-hidden="true"></i> Tutorials</a>
+        </li>
+        <li>
+          <a href="schedule.html"><i class="fa fa-calendar" aria-hidden="true"></i> Schedule</a>
+        </li>
       </ul>
-    </nav>
-  </header>
-  <h1>About</h1>
-  <section id="mission">
-    <h2>Mission</h2>
-    <p>To provide a community for people in the Seoul area to build skills in computer science</p>
-  </section>
-  <section id="leadership">
-    <h2>Leadership</h2>
-    <div class="leader">
-      <img src="#">
-      <p class="name">A</p>
-      <p class="role">JavaScript Instructor</p>
-    </div>
-    <div class="leader">
-      <img src="#">
-      <p class="name">JY</p>
-      <p class="role">Web Instructor</p>
-    </div>
-    <div class="leader">
-      <img src="img/charlie.png">
-      <p class="name">Charlie Lee</p>
-      <p class="role">Java Instructor</p>
-    </div>
-    <div class="leader">
-      <img src="#">
-      <p class="name">BK</p>
-      <p class="role">Python Organizer</p>
-    </div>
-    <div class="leader">
-      <img src="#">
-      <p class="name">BS</p>
-      <p class="role">Event Organizer</p>
-    </div>
-    <div class="leader">
-      <img src="img/josie.png">
-      <p class="name">Josie Daw</p>
-      <p class="role">Communications Manager</p>
-    </div>
-    <div class="leader">
-      <img src="#">
-      <p class="name">DS</p>
-      <p class="role">Web Developer</p>
-    </div>
-    <div class="leader">
-      <img src="img/beege.jpg">
-      <p class="name">Bryan "Beege" Berry</p>
-      <p class="role">Organizer, Instructor</p>
-    </div>
-    <div class="leader">
-      <img src="img/dale.jpg">
-      <p class="name">Dale Seo</p>
-      <p class="role">GitHub/Website Administrator</p>
-    </div>
-  </section>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</nav>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-9">
+      <div class="page-header">
+        <h1>About</h1>
+      </div>
+
+      <h2>Mission</h2>
+      <p>To provide a community for people in the Seoul area to build skills in computer science</p>
+
+      <h2>Leadership</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object" src="img/beege.jpg" width="100" alt="Beege">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Bryan "Beege" Berry</h4>
+                <p>Organizer, Instructor</p>
+              </div>
+            </div><!--/.media -->
+          </div><!--/.col-sm-4 -->
+          <div class="col-sm-4">
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object" src="img/dale.jpg" width="100" alt="Dale">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Dale Seo</h4>
+                <p>GitHub/Website Administrator</p>
+              </div>
+            </div><!--/.media -->
+          </div><!--/.col-sm-4 -->
+        </div><!--/.row -->
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object" src="img/charlie.png" width="100" alt="Charlie">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Charlie Lee</h4>
+                <p>Java Instructor</p>
+              </div>
+            </div><!--/.media -->
+          </div><!--/.col-sm-4 -->
+          <div class="col-sm-4">
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object" src="img/josie.png" width="100" alt="Josie">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Josie Daw</h4>
+                <p>Communications Manager</p>
+              </div>
+            </div><!--/.media -->
+          </div><!--/.col-sm-4 -->
+        </div><!--/.row -->
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object" src="img/unknown.jpg" width="100" alt="JY">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">JY</h4>
+                <p>Web Instructor</p>
+              </div>
+            </div><!--/.media -->
+          </div><!--/.col-sm-4 -->
+          <div class="col-sm-4">  
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object" src="img/unknown.jpg" width="100" alt="BK">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">BK</h4>
+                <p>Python Organizer</p>
+              </div>
+            </div><!--/.media -->
+        </div><!--/.col-sm-4 -->
+        </div><!--/.row -->
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object" src="img/unknown.jpg" width="100" alt="BS">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">BS</h4>
+                <p>Event Organizer</p>
+              </div>
+            </div><!--/.media -->
+          </div><!--/.col-sm-4 -->
+          <div class="col-sm-4">
+            <div class="media">
+              <div class="media-left">
+                <a href="#">
+                  <img class="media-object" src="img/unknown.jpg" width="100" alt="DS">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">DS</h4>
+                <p>Web Developer</p>
+              </div>
+            </div><!--/.media -->
+        </div><!--/.col-sm-4 -->
+        </div><!--/.row -->
+      </div><!--/.container -->
+    </div><!--/.col-sm-9 -->
+    <div class="col-sm-3">
+      <iframe width="225" height="570" src="http://meetu.ps/34v2fV" frameborder="0"></iframe>
+    </div><!--/.col-sm-3 -->
+  </div><!--/.row -->
+</div><!--/.container -->
+
 </body>
 </html>
