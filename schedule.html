@@ -48,7 +48,19 @@
         <h1>Schedule</h1>
       </div>
 
-      <div id="meetups"></div>
+      <h2>Upcoming Meetups</h2>
+
+      <table class="table table-hover table-bordered">
+        <thead>
+          <tr class="success">
+            <th width="50%"><center>Name</center></th>
+            <th width="10%"><center>Going</center></th>
+            <th width="20%"><center>Place</center></th>
+            <th width="20%"><center>Time</center></th>
+          </tr>
+        </thead>
+        <tbody id="meetups"/>
+      </table>
 
       <p>See <a href="https://www.meetup.com/Learn-To-Code-Seoul">our Meetup.com calendar</a> for details on our next meetings.</p>
 
@@ -63,6 +75,37 @@
     </div><!--/.col-sm-3 -->
   </div><!--/.row -->
 </div><!--/.container -->
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+
+<script type="text/javascript">
+  $(() => {
+    loadMeetups();
+  });
+
+  function loadMeetups() {
+    $.getJSON('https://api.meetup.com/Learn-Teach-Code-Seoul/events?callback=?&sign=true&photo-host=public&page=20')
+      .done((res) => {
+        $.each(res.data, (idx, val) => {
+          $meetup = $('<tr>');
+          $name = $('<a target="_blank">').attr('href', val.link).text(val.name);
+          $('<td>').append($name).appendTo($meetup);
+          $('<td>').append($('<span class="badge">').text(val.yes_rsvp_count)).appendTo($meetup);
+          $('<td>').text(val.venue.name.substring(0, 13)).appendTo($meetup);
+          $('<td>').text(moment(val.time).format("ddd MMM Do h:mm A")).appendTo($meetup);
+          $meetup.appendTo($('#meetups'));
+        });
+      })
+      .fail(() => {
+        console.log('error');
+      });
+  }
+</script>
 
 </body>
 </html>
